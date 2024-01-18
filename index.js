@@ -16,3 +16,13 @@ if(b==20){//value matched
     console.log("y matched");
 }
 
+const arr=[2,5,6,4,7,3,8,3,1];
+
+arr.filter((item)=>{
+    console.log(item);
+});
+
+let res=arr.filter((item)=>{
+    return item===3;
+})
+console.log(res);
