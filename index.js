@@ -30,24 +30,31 @@
 
 //console.log(process.argv);
 
-const fs=require('fs');
-const path=require('path');
-const dirPath=path.join(__dirname,'files');
-for(i=0;i<5;i++){
-    fs.writeFileSync(dirPath+"/hello"+i+".txt","a simple file");
-}
-fs.readdir(dirPath,(err,items)=>{
-    console.warn(items);
-})
+// const fs=require('fs');
+// const path=require('path');
+// const dirPath=path.join(__dirname,'files');
+// for(i=0;i<5;i++){
+//     fs.writeFileSync(dirPath+"/hello"+i+".txt","a simple file");
+// }
+// fs.readdir(dirPath,(err,items)=>{
+//     console.warn(items);
+// })
 
-const filePath=`${dirPath}/hello0.txt`;
-fs.appendFile(filePath,' and my name is aakarshit',(err)=>{
-    if(!err) console.log("file is updated");
-});
+// const filePath=`${dirPath}/hello0.txt`;
+// fs.appendFile(filePath,' and my name is aakarshit',(err)=>{
+//     if(!err) console.log("file is updated");
+// });
 
-fs.rename(filePath,`${dirPath}/fruit.txt`,err=>{
-    if(!err) console.log("file name is updated");
-});
+// fs.rename(filePath,`${dirPath}/fruit.txt`,err=>{
+//     if(!err) console.log("file name is updated");
+// });
 
-fs.unlinkSync(`hellow0.txt`);
-fs.unlinkSync(`${dirPath}/hello1.txt`);
+// fs.unlinkSync(`hellow0.txt`);
+// fs.unlinkSync(`${dirPath}/hello1.txt`);
+
+console.log("Hello");
+setTimeout(()=>{
+    console.log("World");
+},2000)
+
+console.log("Nitish");
